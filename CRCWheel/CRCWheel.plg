@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CRCWheel - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\DAN2~1\LOCALS~1\Temp\RSPB3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/CRCWheel.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\ACEmu\UASv1_retry\uas\CRCWheel\CRC_Module.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DAN2~1\LOCALS~1\Temp\RSPB3.tmp" 
+Creating command line "link.exe -lib /nologo /out:"../Debug/CRCWheel.lib"  .\Debug\CRC_Module.obj "
+<h3>Output Window</h3>
+Compiling...
+CRC_Module.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+CRCWheel.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,270 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 402, 358
+STYLE DS_ABSALIGN | DS_3DLOOK | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "UAS2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Start Server",IDB_START,7,7,53,12
+    PUSHBUTTON      "E&xit Server",IDB_EXIT,7,22,53,12
+    EDITTEXT        IDC_CONSOLE,7,284,211,30,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_CHARPORT,91,90,32,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_VISIBLE | WS_GROUP
+    LTEXT           "Character Server Port:",IDC_STATCP,13,90,72,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    EDITTEXT        IDC_WORLDPORT,91,105,32,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_VISIBLE | WS_GROUP
+    LTEXT           "World Server Port:",IDC_STATWP,13,104,72,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    EDITTEXT        IDC_LOCALIP,47,74,76,12,ES_CENTER | ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_GROUP
+    LTEXT           "Local IP:",IDC_STATIP,13,74,33,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Clear Spawned Objects",IDB_CLEAROBJECTS,134,7,82,12,
+                    WS_DISABLED
+    EDITTEXT        IDC_DBIP,26,227,70,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_GROUP
+    EDITTEXT        IDC_DBNAME,124,227,70,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_GROUP
+    EDITTEXT        IDC_DBUSER,26,255,70,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_GROUP
+    EDITTEXT        IDC_DBPASSWORD,124,255,70,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_GROUP
+    LTEXT           "Database Server IP:",IDC_STATDBIP,26,215,70,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    LTEXT           "Database Name:",IDC_STATDBN,124,215,69,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    LTEXT           "Database Username:",IDC_STATDBU,26,243,69,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    LTEXT           "User Password:",IDC_STATDBPASS,124,243,70,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    CONTROL         "Microsoft Access",IDC_ACCESS_DB,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,14,185,70,
+                    10
+    CONTROL         "MS SQL",IDC_MSSQL_DB,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,14,175,70,10
+    CONTROL         "MySQL 5.1",IDC_MYSQL_DB,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_GROUP,14,164,52,10
+    EDITTEXT        IDC_DBTYPE,124,172,33,12,NOT WS_VISIBLE | NOT WS_BORDER | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Settings",IDC_CONFIG,70,7,54,12
+    GROUPBOX        "Server Settings",IDC_SETTING_FRAME,7,61,211,79,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_ACCESS_FILE,14,198,199,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "Database Settings",IDC_FRAME_DB,7,147,211,127,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Server Status Settings (Optional)",IDC_FRAME_STATUS,227,
+                    61,168,133
+    CONTROL         "Private Server",IDC_SERVER,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_NOTIFY | NOT WS_VISIBLE | WS_TABSTOP,
+                    132,74,80,13
+    EDITTEXT        IDC_ED_HOST,278,74,111,12
+    LTEXT           "Web Host:",IDC_STAT_HOST,230,74,40,12,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+    LTEXT           "URL Path:",IDC_STAT_PATH,230,87,38,12,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+    LTEXT           "Access Port:",IDC_STAT_PORT,230,102,44,12,
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_ED_PORT,278,102,31,12
+    EDITTEXT        IDC_ED_URL,278,87,111,12
+    LTEXT           "Serial Code:",IDC_STAT_SERIAL,230,162,38,12,
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_ED_SERIAL,232,174,157,13
+    LTEXT           "Key ID:",IDC_STAT_KEY,230,131,38,12,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+    EDITTEXT        IDC_ED_KEY,278,131,31,12
+    LTEXT           "Client Version:",IDC_STAT_CLIENT,230,146,44,12,
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_ED_CLIENT,278,146,31,12
+    EDITTEXT        IDC_MAX_USERS,180,90,32,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_VISIBLE | WS_GROUP
+    LTEXT           "Max. Clients:",IDC_STAT_MAXUSERS,133,90,44,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    LTEXT           "Server ID:",IDC_STAT_ID,230,116,38,12,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+    EDITTEXT        IDC_ED_ID,278,116,31,12
+    EDITTEXT        IDC_ED_SNAME,65,121,147,12,ES_CENTER | NOT WS_VISIBLE
+    LTEXT           "World Name:",IDC_STAT_SNAME,14,121,46,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | NOT WS_GROUP
+    LTEXT           " Name Not Set",IDC_STAT_NAME,63,40,146,14,
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "World Name:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | WS_GROUP,15,41,41,13
+    PUSHBUTTON      "Save Settings",IDC_BTN_UPDATE,70,22,53,12
+    EDITTEXT        IDC_HELP_TITLE,230,210,153,12,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        "Help",IDC_STATIC,227,199,168,75
+    EDITTEXT        IDC_WBBOX,227,7,167,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send World Broadcast",IDC_WB,272,23,77,11
+    EDITTEXT        IDC_HELP_TEXT,239,222,144,45,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    PUSHBUTTON      "Disconnect All Clients",IDB_DISC_ALL,134,22,82,12,
+                    WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_BINDATA             BINARY  DISCARDABLE     "blobage.txt"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,2,1631
+ PRODUCTVERSION 1,2,2,1726
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Public Development Test Server\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "UAS2 Server\0"
+            VALUE "FileVersion", "1, 2, 2, 1631\0"
+            VALUE "InternalName", "Development Server\0"
+            VALUE "LegalCopyright", "Copyright © 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "UAS2.exe\0"
+            VALUE "PrivateBuild", "1631\0"
+            VALUE "ProductName", "UAS2 Developement Server\0"
+            VALUE "ProductVersion", "1, 2, 2, 1726\0"
+            VALUE "SpecialBuild", "1626\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "resource\\UAS2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_SYSTRAY MENU DISCARDABLE 
+BEGIN
+    POPUP "Systray"
+    BEGIN
+        MENUITEM "&Server Console",             ID_SYSTRAY_ACE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit Server",                ID_SYSTRAY_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 316
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
